@@ -69,6 +69,7 @@ export default function Home() {
                     {networks.map((network) => (
                         <div className={styles.card_container}>
                             <NetworkCard
+                                key={network.title}
                                 title={network.title}
                                 status={network.status}
                                 description={network.description}

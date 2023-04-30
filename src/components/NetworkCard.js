@@ -1,12 +1,11 @@
 import styles from '@/styles/NetworkCard.module.css'
 import Link from "next/link";
-import Image from 'next/image';
 
 export default function NetworkCard({ title, status, description, herf, src }) {
     return (
         <Link href={herf} className={styles.link}>
             <div className={styles.card}>
-                <Image src={src} className={styles.img} width={170} height={240} />
+                <img src={src} className={styles.img} />
 
 
 

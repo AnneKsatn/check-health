@@ -142,6 +142,11 @@
     .btn_generate {
         font-size: 18px;
     }
+
+  .card_container {
+      min-width: calc(100%/2 - 20px/2);
+      max-width: calc(100%/2 - 20px/2);
+  }
 }
 
 @media (max-width: 600px) {

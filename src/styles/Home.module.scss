@@ -1,22 +1,49 @@
 .landing_page {
-    display: flex;
     min-height: 100vh;
-    max-height: 100vh;
-    padding: 0px 120px;
+    color: #0C0A3E;
 }
 
 
 .description {
-    color: #EFA05E;
-    padding: 48px 60px 32px 0px;
+    padding: 48px 0px 32px 0px;
     flex-grow: 1;
+        padding: 0px 60px;
 }
 
 .header {
+    font-size: 26px;
+    font-weight: 700;
+    padding-top: 40px;
+}
+
+.subheader {
     font-size: 52px;
-    padding-bottom: 103px;
+    width: 900px;
+
+    padding-top: 80px;
+}
+
+.subheader p {
+    padding-bottom: 5px
+}
+
+.call_to_action {
+    padding-top: 20px;
+    font-size: 24px;
+    width: 900px;
+}
+
+.section {
+    background: #EDF2F7;
+    padding: 30px 60px;
+    margin-top: 70px;
+}
+
+.section_title {
+    font-size: 36px;
     padding-top: 86px;
-    font-weight: 900;
+    padding-left: 80px;
+    font-weight: 500;
     line-height: 78px;
     max-width: 660px;
 }
@@ -60,9 +87,9 @@
     padding-bottom: 70px;
 }
 
-.features > *:not(:last-child) {
-    margin-bottom: 12px; 
-} 
+.features>*:not(:last-child) {
+    margin-bottom: 12px;
+}
 
 .features div {
     border-bottom: black 1px solid;
@@ -79,13 +106,24 @@
     text-decoration: none;
 }
 
+.network_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-@media (max-width: 1500px) {  
+.card_container {
+    min-width: calc(100%/3 - 40px/3);
+    max-width: calc(100%/3 - 40px/3);
+}
+
+
+@media (max-width: 1500px) {
     .description {
         color: #EFA05E;
         padding: 28px 0px 0px 20px;
     }
-    
+
     .header {
         font-size: 36px;
         padding-bottom: 20px;
@@ -99,8 +137,8 @@
         line-height: 42px;
         padding-bottom: 90px;
     }
-    
-    
+
+
     .btn_generate {
         font-size: 18px;
     }
@@ -143,11 +181,11 @@
         min-width: 100%;
         display: none;
     }
-    
+
     .btn_generate {
-        display:block;
+        display: block;
         padding: 16px 66px;
-        margin: auto; 
+        margin: auto;
         max-width: fit-content;
 
         font-size: 20px;

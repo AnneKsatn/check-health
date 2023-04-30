@@ -197,14 +197,14 @@ export default function Prompt({ generate, serverTags, serverSections, mode, pre
                     <Popover title="Please upload photo up to 2MB">
                         <button
                             className={styles.generate_btn_disabled}
-                        >GENERATE
+                        >СГЕНЕРИРОВАТЬ
                         </button>
 
                     </Popover>
                 ) : (< button
                     className={styles.generate_btn}
                     onClick={generateRequest}
-                >GENERATE
+                >СГЕНЕРИРОВАТЬ
                 </button>)
                 }
 

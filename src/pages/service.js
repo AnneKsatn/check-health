@@ -96,7 +96,8 @@ export default function Home() {
     return (
         <Layout>
             <div className={styles.layout}>
-                <Tabs
+                <GenerationTool mode="Generate" />
+                {/* <Tabs
                     defaultActiveKey="1"
                     items={[
                         {
@@ -116,7 +117,7 @@ export default function Home() {
                         },
 
                     ]}
-                />
+                /> */}
             </div>
         </Layout>
     );

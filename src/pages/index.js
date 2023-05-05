@@ -15,7 +15,7 @@ export default function Home() {
             title: "Neurite",
             description: "Анализ медицинских изображений",
             status: true,
-            herf: "",
+            herf: "/service",
             src: 'https://static.tildacdn.com/tild3139-3530-4336-a534-326461356336/chest-5.jpg'
         },
         {
@@ -39,7 +39,7 @@ export default function Home() {
             <div className={styles.description}>
 
                 <div className={styles.header}>
-                    NEURO NET
+                    HEALTH CECK
                 </div>
 
                 <div className={styles.subheader}>

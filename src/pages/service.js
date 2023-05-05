@@ -96,7 +96,7 @@ export default function Home() {
     return (
         <Layout>
             <div className={styles.layout}>
-                <GenerationTool mode="Generate" />
+                <StylingTool mode="Styling" />
                 {/* <Tabs
                     defaultActiveKey="1"
                     items={[
@@ -116,8 +116,8 @@ export default function Home() {
                             children: <StylingTool mode="Styling" />,
                         },
 
-                    ]}
-                /> */}
+                    ]} */}
+                {/* /> */}
             </div>
         </Layout>
     );

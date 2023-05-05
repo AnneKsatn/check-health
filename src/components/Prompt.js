@@ -57,9 +57,9 @@ export default function Prompt({ generate, serverTags, serverSections, mode, pre
     };
 
     const uploadButton = (
-        <div>
+        <div >
             {loading ? <LoadingOutlined /> : <PlusOutlined />}
-            <div style={{ marginTop: 8 }}>Upload</div>
+            <div style={{ marginTop: 8, width: 400 }}>Загрузить</div>
         </div>
     );
 
@@ -131,47 +131,10 @@ export default function Prompt({ generate, serverTags, serverSections, mode, pre
 
     return (
         <div>
-            <div className={styles.clue_tags_container}>
-                <Collapse defaultActiveKey={['Styles']} onChange={onChange}>
-                    {tagSections.map((section) => (
-                        <Panel header={section} key={section}>
-                            <div className={styles.tags}>
-                                {tags.map((tag) => (
-                                    (tag.section === section) &&
-                                    <Tag
-                                        key={tag.title}
-                                        tag={tag.title}
-                                        section={section.section_title}
-                                        updateData={updateData}
-                                        isSelected={tag.isSelected}
-                                    />
-                                ))}
-                            </div>
-                        </Panel>
-                    ))}
-                </Collapse>
-            </div>
-
-            <div className={styles.resulting_tags_prompt}>
-                <div className={styles.tags}>
-                    {resultingPromt.map((tag) => (
-                        <ResultingPromptTag
-                            key={tag.title}
-                            tag={tag.title}
-                            section={tag.section}
-                            updateData={updateData} />
-                    ))}
-                </div>
-            </div>
 
             <div className={styles.inpt_section}>
-                <input
-                    ref={tagInput}
-                    className={styles.tags_inpt}
-                    onKeyDown={inputCustomTag}
-                    placeholder="Type your prompt…" />
 
-                {mode != "Generate" && <div >
+                <div >
 
                     <Upload
                         customRequest={({ onSuccess }) => setTimeout(() => { onSuccess("ok", null); }, 0)}
@@ -184,7 +147,7 @@ export default function Prompt({ generate, serverTags, serverSections, mode, pre
                         {imageUrl ? <img src={imageUrl} alt="avatar" style={{ maxWidth: '100%', maxHeight: '100%' }} /> : uploadButton}
                     </Upload>
 
-                </div>}
+                </div>
 
             </div>
 
@@ -197,14 +160,14 @@ export default function Prompt({ generate, serverTags, serverSections, mode, pre
                     <Popover title="Please upload photo up to 2MB">
                         <button
                             className={styles.generate_btn_disabled}
-                        >СГЕНЕРИРОВАТЬ
+                        >Отправить на проверку
                         </button>
 
                     </Popover>
                 ) : (< button
                     className={styles.generate_btn}
                     onClick={generateRequest}
-                >СГЕНЕРИРОВАТЬ
+                >Отправить на проверку
                 </button>)
                 }
 

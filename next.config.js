@@ -4,6 +4,7 @@ const nextConfig = {
     images: {
         domains: ["picsum.photos", "replicate.delivery", "techbriefly.com", "tjzk.replicate.delivery"],
     },
+    output: 'standalone'
 };
 
 module.exports = nextConfig;

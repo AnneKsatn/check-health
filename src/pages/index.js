@@ -1,4 +1,3 @@
-import DesignBrainLogo from "@/components/DesignBrainLogo";
 import ImageSlider from "@/components/ImageSlider";
 import NetworkCard from "@/components/NetworkCard";
 
@@ -39,7 +38,7 @@ export default function Home() {
             <div className={styles.description}>
 
                 <div className={styles.header}>
-                    HEALTH CECK
+                    СHECK HEALTH
                 </div>
 
                 <div className={styles.subheader}>

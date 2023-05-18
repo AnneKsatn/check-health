@@ -27,6 +27,6 @@ export default function Layout({ title, keywords, desctiption, children }) {
 }
 
 Layout.defaultProps = {
-    title: 'Health Check',
+    title: 'СHECK HEALTH',
     desctiption: 'Check your health with AI',
 }
